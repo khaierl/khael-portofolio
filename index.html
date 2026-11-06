@@ -4,791 +4,648 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Khael — Portfolio</title>
+    <title>Carissa Citra Rahmadi — Portfolio</title>
+    <meta name="description" content="The creative portfolio of Carissa Citra Rahmadi, featuring web development, mobile applications, photography, and creative projects.">
+
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Permanent+Marker&display=swap"
-        rel="stylesheet"
-    >
-
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800;900&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- ================= NAV ================= -->
+    <!-- NAVIGATION -->
+    <header class="nav">
+        <a href="#home" class="nav-logo">CARS<span>®</span></a>
 
-    <nav class="nav">
-
-        <a href="#home" class="logo">
-            Khael<span>®</span>
-        </a>
-
-        <div class="nav-links">
-
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#contact">CONTACT</a>
-
-        </div>
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Awards</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
         <div class="nav-status">
             <span class="status-dot"></span>
-            AVAILABLE
+            AVAILABLE TO CONNECT
         </div>
 
-        <button class="menu-toggle" id="menuToggle">
-            MENU
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            type="button"
+        >
+            ☰
         </button>
-
-    </nav>
-
-
+    </header>
 
     <main>
 
-        <!-- ================= HERO ================= -->
-
+        <!-- HERO -->
         <section class="hero" id="home">
 
             <div class="hero-top">
-
-                <span>PORTFOLIO / 2026</span>
-
-                <span class="hero-location">
-                    NETHERLANDS ↗
-                </span>
-
+                <span>PORTFOLIO — 2026</span>
+                <span>CREATIVE MINDSET / DIGITAL WORLD</span>
             </div>
-
-
 
             <div class="hero-main">
 
-                <div class="hero-title">
+                <div class="hero-copy">
+                    <p class="eyebrow">HELLO, WORLD! I'M</p>
 
-                    <p class="scribble">
-                        this is me
-                    </p>
-
-                    <h1>
-                        I DON'T
-                        <br>
-                        <span>FOLLOW</span>
-                        <br>
-                        THE GRID.
+                    <h1 class="hero-title">
+                        CARISSA<br>
+                        CITRA<br>
+                        <span>RAHMADI.</span>
                     </h1>
 
-                    <p class="hero-subtitle">
-                        I create things, break things,
-                        learn things and sometimes
-                        make them work again.
+                    <p class="hero-description">
+                        I turn ideas into digital experiences through
+                        technology, creativity, and a little bit of curiosity.
                     </p>
 
+                    <a href="#projects" class="hero-button">
+                        EXPLORE MY WORK <span>↘</span>
+                    </a>
                 </div>
 
+                <div class="hero-visual">
 
+                    <div class="hero-sticker sticker-yellow">
+                        CREATIVE<br>IN PROGRESS!
+                    </div>
 
-                <div class="hero-photo">
+                    <div class="hero-photo">
+                        <img
+                            src="images/seantik.jpg"
+                            alt="Carissa Citra Rahmadi"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        >
 
-                    <div class="tape tape-one"></div>
+                        <div class="photo-fallback">
+                            <span>YOUR PHOTO</span>
+                            <small>images/seantik.jpg</small>
+                        </div>
+                    </div>
 
-                    <img
-                        src="images/seantik.jpg"
-                        alt="My profile photo"
-                    >
+                    <div class="hero-caption">
+                        MADE WITH CURIOSITY ✳
+                    </div>
 
-                    <div class="photo-label">
-                        <span>01</span>
-                        <strong>Pretty Sean</strong>
+                    <div class="hero-sticker sticker-red">
+                        THINK<br>DIFFERENT.
                     </div>
 
                 </div>
-
             </div>
-
-
 
             <div class="hero-bottom">
-
-                <div class="scroll-note">
-                    ↓ SCROLL TO EXPLORE
-                </div>
-
-                <div class="hero-line"></div>
-
-                <div class="hero-small">
-                    CODE / MUSIC / EDITING
-                </div>
-
+                <span>BASED IN INDONESIA</span>
+                <a href="#about">SCROLL TO EXPLORE ↓</a>
+                <span>HTML · CSS · JS · PHP · FLUTTER</span>
             </div>
 
         </section>
 
+        <!-- ABOUT -->
+        <section class="intro section-pad" id="about">
 
-
-        <!-- ================= INTRO ================= -->
-
-        <section class="intro" id="about">
-
-            <div class="section-marker">
-                01
+            <div class="section-heading">
+                <span class="section-label">01 / ABOUT ME</span>
+                <span class="section-note">A LITTLE INTRODUCTION</span>
             </div>
 
-            <div class="intro-text">
+            <div class="about-layout">
 
-                <p class="mini-title">
-                    A LITTLE ABOUT ME
-                </p>
-
-                <h2>
-                    Just a person who likes
-                    <span>making things.</span>
-                </h2>
-
-                <p class="intro-description">
-                    I'm a student and aspiring developer who enjoys
-                    creating websites, applications, experimenting
-                    with ideas, and discovering new things through
-                    the process.
-                </p>
-
-                <p class="intro-description">
-                    Outside of coding, I'm also someone who enjoys music,
-                    editing photos and videos, and photography. I like capturing moments, 
-                    experimenting with visuals, and exploring different ways to express my ideas. 
-                    I don't always know exactly where an idea will go, 
-                    sometimes I just start creating and figure things out along the way.
-                </p>
-
-            </div>
-
-            <div class="about-photo">
-
-                <div class="photo-card card-one">
-
+                <div class="about-photo reveal">
                     <img
                         src="images/me.jpg"
-                        alt="About me"
+                        alt="Carissa Citra Rahmadi"
                     >
-
-                    <span>
-                        that's me :)
-                    </span>
-
+                    <span class="photo-number">FIG. 01 — ME</span>
                 </div>
 
-                <div class="scribble-arrow">
-                    ↙
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= OUTSIDE THE CODE ================= -->
-
-        <section class="interests">
-
-            <div class="interest-title">
-
-                <span>THINGS I LIKE</span>
-
-                <h2>
-                    OUTSIDE
-                    <br>
-                    THE CODE
-                </h2>
-
-            </div>
-
-
-
-            <div class="interest-items">
-
-                <!-- MUSIC -->
-
-                <div class="interest-item">
-
-                    <span>01</span>
-
-                    <strong>Music</strong>
-
-                    <p>
-                        Playlists, artists and songs
-                        that stay on repeat.
-                    </p>
-
-                </div>
-
-
-
-                <!-- EDITING -->
-
-                <div class="interest-item">
-
-                    <span>02</span>
-
-                    <strong>Editing</strong>
-
-                    <p>
-                        Photos, videos and little details
-                        I like to experiment with.
-                    </p>
-
-                </div>
-
-
-
-                <!-- PHOTOGRAPHER -->
-
-                <div class="interest-item">
-
-                    <span>03</span>
-
-                    <strong>Photographer</strong>
-
-                    <p>
-                        Capturing moments, people and little things
-                         that catch my attention.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= SKILLS ================= -->
-
-        <section class="skills">
-
-            <div class="skills-title">
-
-                <span>02 / SKILLS</span>
-
-                <h2>
-                    WHAT'S
-                    <br>
-                    IN MY
-                    <br>
-                    <em>BACKPACK?</em>
-                </h2>
-
-            </div>
-
-            <div class="skills-list">
-
-                <div>
-                    <span>01</span>
-                    HTML / CSS
-                </div>
-
-                <div>
-                    <span>02</span>
-                    JAVASCRIPT
-                </div>
-
-                <div>
-                    <span>03</span>
-                    PHP / LARAVEL
-                </div>
-
-                <div>
-                    <span>04</span>
-                    FLUTTER
-                </div>
-
-                <div>
-                    <span>05</span>
-                    SUPABASE
-                </div>
-
-                <div>
-                    <span>06</span>
-                    PHOTO / VIDEO EDITING
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= PROJECTS ================= -->
-
-        <section class="projects" id="projects">
-
-            <div class="projects-header">
-
-                <div>
-
-                    <span>
-                        03 / SELECTED WORK
-                    </span>
+                <div class="about-content reveal">
 
                     <h2>
-                        STUFF
-                        <br>
-                        <em>I MADE.</em>
+                        CURIOUS<br>
+                        BY NATURE.<br>
+                        <span>CREATIVE</span><br>
+                        BY CHOICE.
                     </h2>
 
-                </div>
+                    <p>
+                        Hi! I'm Carissa Citra Rahmadi, a creative individual
+                        interested in technology, music, and digital projects.
+                        I enjoy building websites, exploring new ideas,
+                        photography, and editing photos and videos.
+                    </p>
 
-                <p>
-                    A collection of projects I've created
-                    while learning, experimenting and
-                    trying new things.
-                </p>
+                    <p>
+                        I'm always looking for opportunities to grow,
+                        explore new perspectives, and turn creative ideas
+                        into meaningful work. I believe in continuous
+                        learning and expressing myself through technology
+                        and creativity.
+                    </p>
+
+                    <div class="about-tags">
+                        <span>WEB DEVELOPMENT</span>
+                        <span>PHOTOGRAPHY</span>
+                        <span>MUSIC</span>
+                        <span>CREATIVE WORK</span>
+                    </div>
+
+                    <!-- CORTIS -->
+                    <div class="about-music">
+
+                        <div class="about-music-image">
+                            <img src="images/cortis.jpg" alt="CORTIS">
+                        </div>
+
+                        <div class="about-music-text">
+                            <span class="music-label">
+                                A PART OF MY WORLD / MUSIC
+                            </span>
+
+                            <h3>CORTIS<span> ↗</span></h3>
+
+                            <p>
+                                CORTIS is one of my music inspirations.
+                                Their creative identity and the idea of
+                                <em>Color Outside the Lines</em> remind me
+                                to explore new perspectives, express myself,
+                                and not be afraid to think differently.
+                            </p>
+                        </div>
+
+                        <div class="music-symbol">♪</div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERESTS -->
+        <section class="interests section-pad">
+
+            <div class="section-heading">
+                <span class="section-label">02 / THINGS I LOVE</span>
+                <span class="section-note">MY INTERESTS</span>
+            </div>
+
+            <div class="interests-grid">
+
+                <article class="interest-item reveal">
+                    <span class="interest-number">01</span>
+                    <div class="interest-icon">♫</div>
+                    <h3>MUSIC</h3>
+                    <p>
+                        Finding inspiration and expressing feelings through music.
+                    </p>
+                </article>
+
+                <article class="interest-item reveal">
+                    <span class="interest-number">02</span>
+                    <div class="interest-icon">✳</div>
+                    <h3>PHOTOGRAPHY</h3>
+                    <p>
+                        Capturing moments, details, and stories through a lens.
+                    </p>
+                </article>
+
+                <article class="interest-item reveal">
+                    <span class="interest-number">03</span>
+                    <div class="interest-icon">⌘</div>
+                    <h3>TECHNOLOGY</h3>
+                    <p>
+                        Exploring how digital tools can bring ideas to life.
+                    </p>
+                </article>
+
+                <article class="interest-item reveal">
+                    <span class="interest-number">04</span>
+                    <div class="interest-icon">✎</div>
+                    <h3>EDITING</h3>
+                    <p>
+                        Creating visual stories through photo and video editing.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="skills section-pad">
+
+            <div class="section-heading">
+                <span class="section-label">03 / WHAT I CAN DO</span>
+                <span class="section-note">SKILLS & TOOLS</span>
+            </div>
+
+            <h2 class="big-section-title">
+                BUILDING.<br>
+                <span>IMPROVING.</span>
+            </h2>
+
+            <div class="skills-grid">
+
+                <article class="skill-card reveal">
+                    <span class="skill-index">01 — DEVELOPMENT</span>
+                    <h3>Web Development</h3>
+                    <p>
+                        Building responsive websites and dynamic web applications.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                        <span>Filament</span>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <span class="skill-index">02 — MOBILE</span>
+                    <h3>Mobile Development</h3>
+                    <p>
+                        Creating mobile applications and connecting them to data.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Supabase</span>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <span class="skill-index">03 — VISUAL</span>
+                    <h3>Creative & Design</h3>
+                    <p>
+                        Exploring layouts, visual communication, and digital content.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>UI/UX</span>
+                        <span>Photo Editing</span>
+                        <span>Video Editing</span>
+                        <span>Photography</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- AWARDS & CERTIFICATES -->
+        <section class="certifications section-pad" id="certifications">
+
+            <div class="section-heading">
+                <span class="section-label">04 / MILESTONES</span>
+                <span class="section-note">CERTIFICATES & ACHIEVEMENTS</span>
+            </div>
+
+            <div class="certificate-grid">
+
+                <!-- GETEKSI -->
+                <article class="certificate-card reveal">
+
+                    <div class="certificate-image">
+                        <img
+                            src="images/certificate-geteksi.jpg"
+                            alt="Geteksi certificate"
+                        >
+                    </div>
+
+                    <div class="certificate-info">
+                        <span>01 / CERTIFICATE</span>
+                        <h3>Geteksi</h3>
+                        <p>
+                            Certificate of participation and achievement.
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- CREATIVE VIDEO COMPETITION -->
+                <article class="certificate-card reveal">
+
+                    <div class="certificate-image">
+                        <img
+                            src="images/certificate-dbasic.jpg"
+                            alt="D'Basic Season 2 creative video competition certificate"
+                        >
+                    </div>
+
+                    <div class="certificate-info">
+                        <span>02 / ACHIEVEMENT</span>
+                        <h3>Creative Video Competition</h3>
+                        <p>
+                            1st Place — D'Basic Season 2, 2025.
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- REVOU -->
+                <article class="certificate-card reveal">
+
+                    <a
+                        class="certificate-image certificate-pdf"
+                        href="certificate-revou.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Open RevoU certificate"
+                    >
+                        <span class="pdf-symbol">PDF</span>
+                        <span>VIEW CERTIFICATE ↗</span>
+                    </a>
+
+                    <div class="certificate-info">
+                        <span>03 / ONLINE COURSE</span>
+                        <h3>RevoU Certified Online Course</h3>
+                        <p>Completed on 27 June 2025.</p>
+
+                        <a
+                            class="text-link"
+                            href="certificate-revou.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            OPEN CERTIFICATE ↗
+                        </a>
+                    </div>
+
+                </article>
+
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects section-pad" id="projects">
+
+            <div class="section-heading">
+                <span class="section-label">05 / SELECTED WORK</span>
+                <span class="section-note">SOME THINGS I'VE BUILT</span>
+            </div>
+
+            <h2 class="big-section-title">
+                IDEAS INTO<br>
+                <span>REALITY.</span>
+            </h2>
+
+            <div class="project-grid">
+
+                <!-- PROJECT 1: OASIS' COFFEE -->
+                <article class="project-card project-featured reveal">
+
+                    <a
+                        href="https://URL-WEBSITE-OASIS-COFFEE-KAMU"
+                        class="project-image project-image-natural"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Open Oasis' Coffee website"
+                    >
+                        <img
+                            src="images/project-1.png"
+                            alt="Oasis' Coffee website project"
+                        >
+
+                        <span class="project-overlay">
+                            VIEW LIVE WEBSITE ↗
+                        </span>
+                    </a>
+
+                    <div class="project-info">
+                        <div>
+                            <span class="project-category">
+                                WEB DEVELOPMENT
+                            </span>
+                            <h3>Oasis' Coffee</h3>
+                        </div>
+
+                        <a
+                            href="https://URL-WEBSITE-OASIS-COFFEE-KAMU"
+                            class="project-arrow"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Open Oasis' Coffee website"
+                        >↗</a>
+                    </div>
+
+                    <p class="project-description">
+                        A coffee shop website featuring a dynamic menu and
+                        an admin dashboard for managing menu items and content.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Laravel</span>
+                        <span>PHP</span>
+                        <span>Filament</span>
+                        <span>MySQL</span>
+                    </div>
+
+                </article>
+
+                <!-- PROJECT 2: FASHION THRIFT -->
+                <article class="project-card reveal">
+
+                    <a
+                        href="#project-thrift"
+                        class="project-image project-image-standard"
+                        aria-label="Fashion Thrift app project details"
+                    >
+                        <img
+                            src="images/project-2.jpg"
+                            alt="Fashion Thrift mobile application"
+                        >
+
+                        <span class="project-overlay">
+                            02 / PROJECT DETAILS ↗
+                        </span>
+                    </a>
+
+                    <div class="project-info" id="project-thrift">
+                        <div>
+                            <span class="project-category">
+                                MOBILE APP / UI-UX
+                            </span>
+                            <h3>Fashion Thrift App</h3>
+                        </div>
+
+                        <span class="project-arrow">↗</span>
+                    </div>
+
+                    <p class="project-description">
+                        A mobile shopping app concept for discovering and
+                        buying thrift fashion items.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>UI/UX</span>
+                    </div>
+
+                </article>
 
             </div>
 
+            <!-- PROJECT 3: MAZE GAME -->
+            <article class="maze reveal">
 
-
-            <!-- ================= PROJECT 01 ================= -->
-
-            <article class="project-card project-one">
-
-                <div class="project-image">
-
-                    <span class="project-index">
-                        01
-                    </span>
-
-                    <img
-                        src="images/project-1.png"
-                        alt="Coffee Shop Website"
-                    >
-
-                </div>
-
-
-
-                <div class="project-info">
-
-                    <span class="project-type">
-                        WEB DEVELOPMENT
-                    </span>
-
-                    <h3>
-                        Coffee Shop
-                        <br>
-                        <em>Website</em>
-                    </h3>
-
-                    <p>
-                        A coffee shop website designed to
-                        showcase products, menus and the
-                        visual identity of a coffee brand.
-                    </p>
-
-                    <div class="tags">
-
-                        <span>Laravel</span>
-                        <span>PHP</span>
-                        <span>Tailwind</span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- ================= PROJECT 02 ================= -->
-
-            <article class="project-card project-two">
-
-                <div class="project-info">
-
-                    <span class="project-type">
-                        MOBILE APPLICATION
-                    </span>
-
-                    <h3>
-                        Fashion
-                        <br>
-                        <em>Thrift App</em>
-                    </h3>
-
-                    <p>
-                        A thrift fashion app made for discovering
-                        unique second-hand clothing. It features
-                        curated fashion pieces, category browsing,
-                        and a simple shopping experience built
-                        around finding clothes with their own story.
-                    </p>
-
-                    <div class="tags">
-
-                        <span>Flutter</span>
-                        <span>UI / UX</span>
-                        <span>Fashion</span>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="project-image">
-
-                    <span class="project-index">
-                        02
-                    </span>
-
-                    <img
-                        src="images/project-2.jpg"
-                        alt="Fashion Thrift App"
-                    >
-
-                </div>
-
-            </article>
-
-
-
-            <!-- ================= PROJECT 03 ================= -->
-
-            <article class="maze">
-
-                <div class="maze-title">
-
-                    <span>
+                <div class="maze-content">
+                    <span class="project-category">
                         03 / GAME DEVELOPMENT
                     </span>
 
-                    <h2>
-                        MAZE
-                        <br>
-                        <em>GAME</em>
-                    </h2>
+                    <h3>
+                        THE<br>
+                        MAZE GAME<span>.</span>
+                    </h3>
 
                     <p>
-                        FIND THE WAY OUT.
+                        Find all 11 diamonds, avoid the monsters, and make
+                        your way through the labyrinth. A game project built
+                        around exploration and problem-solving.
                     </p>
 
+                    <div class="project-tech">
+                        <span>GAME LOGIC</span>
+                        <span>PUZZLE</span>
+                    </div>
                 </div>
 
-
-
-                <div class="maze-main">
-
-                    <div class="maze-image">
-
-                        <div class="maze-tape"></div>
-
-                        <img
-                            src="images/maze.png"
-                            alt="Maze Game"
-                        >
-
+                <div
+                    class="maze-art"
+                    aria-label="Maze game decorative illustration"
+                >
+                    <div class="maze-grid-art">
+                        <span>✦</span><span>■</span><span>■</span><span>□</span><span>■</span>
+                        <span>□</span><span>□</span><span>■</span><span>□</span><span>■</span>
+                        <span>■</span><span>□</span><span>◇</span><span>□</span><span>□</span>
+                        <span>■</span><span>□</span><span>■</span><span>■</span><span>□</span>
+                        <span>□</span><span>□</span><span>◇</span><span>□</span><span>★</span>
                     </div>
 
-
-
-                    <div class="maze-info">
-
-                        <div class="diamond">
-
-                            <span>◆</span>
-
-                            <div>
-
-                                <strong>11</strong>
-
-                                <small>
-                                    DIAMONDS
-                                </small>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <p>
-                            An exploration game where the player
-                            must navigate through a labyrinth,
-                            collect all <strong>11 diamonds</strong>,
-                            and avoid monsters hiding along the way.
-                        </p>
-
-
-
-                        <div class="maze-rules">
-
-                            <div>
-                                <b>01</b>
-                                <span>
-                                    ENTER THE LABYRINTH
-                                </span>
-                            </div>
-
-                            <div>
-                                <b>02</b>
-                                <span>
-                                    COLLECT 11 DIAMONDS
-                                </span>
-                            </div>
-
-                            <div>
-                                <b>03</b>
-                                <span>
-                                    DON'T GET CAUGHT
-                                </span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="maze-footer">
-                    GAME / EXPLORATION / SURVIVAL
+                    <span class="maze-caption">FIND YOUR WAY →</span>
                 </div>
 
             </article>
 
         </section>
 
+        <!-- CONTACT -->
+        <section class="contact section-pad" id="contact">
 
-
-        <!-- ================= MUSIC ================= -->
-
-        <section class="music">
-
-            <div class="music-top">
-
-                <span>
-                    04 / PERSONAL
-                </span>
-
-                <span>
-                    CURRENTLY ON REPEAT ♪
-                </span>
-
+            <div class="section-heading">
+                <span class="section-label">06 / SAY HELLO</span>
+                <span class="section-note">LET'S CONNECT</span>
             </div>
 
+            <div class="contact-layout">
 
-
-            <div class="music-layout">
-
-                <div class="music-text">
-
-                    <p class="mini-title">
-                        MUSIC / WHAT INSPIRES ME
-                    </p>
+                <div class="contact-heading">
+                    <p class="eyebrow">HAVE AN IDEA?</p>
 
                     <h2>
-                        CORTIS
+                        LET'S MAKE<br>
+                        SOMETHING<br>
+                        <span>COOL.</span>
                     </h2>
 
-                    <p>
-                        Music has always been something I enjoy
-                        exploring. It's not just something I listen
-                        to in the background — it can change my mood,
-                        inspire ideas, and make me want to discover
-                        something new.
+                    <p class="contact-description">
+                        Have a project, collaboration, or just want to say hi?
+                        Feel free to reach out.
                     </p>
-
-                    <p>
-                        CORTIS is one of the artists who made me
-                        want to explore music even further. Their
-                        sound and way of expressing themselves
-                        remind me that music doesn't always have
-                        to fit into one box. It can be personal,
-                        unexpected, and completely your own.
-                    </p>
-
-                    <p>
-                        I also play a little piano. I'm still
-                        learning and figuring things out, but
-                        playing piano has made me appreciate music
-                        differently — not only as something I hear,
-                        but something I can create myself.
-                    </p>
-
-
-
-                    <div class="album-note">
-
-                        <span>
-                            PLAYLIST / 001
-                        </span>
-
-                        <strong>
-                            COLOR OUTSIDE THE LINES
-                        </strong>
-
-                    </div>
-
                 </div>
 
+                <div class="contact-links">
 
-
-                <div class="music-photo">
-
-                    <div class="photo-frame">
-
-                        <img
-                            src="images/cortis.jpg"
-                            alt="CORTIS"
-                        >
-
-                    </div>
-
-                    <div class="music-sticker">
-                        ♪
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= CONTACT ================= -->
-
-        <section class="contact" id="contact">
-
-            <div class="contact-top">
-
-                <span>
-                    05 / CONTACT
-                </span>
-
-                <span>
-                    LET'S MAKE SOMETHING
-                </span>
-
-            </div>
-
-
-
-            <div class="contact-heading">
-
-                <h2>
-                    GOT AN
-                    <br>
-                    <em>IDEA?</em>
-                </h2>
-
-                <p>
-                    Let's turn it into something real.
-                </p>
-
-            </div>
-
-
-
-            <div class="contact-bottom">
-
-                <div class="socials">
-
-                    <span>
-                        FIND ME HERE
-                    </span>
+                    <a
+                        href="mailto:carissacitra8@email.com"
+                        class="contact-link"
+                    >
+                        <span>EMAIL</span>
+                        <strong>carissacitra8@email.com</strong>
+                        <span class="contact-arrow">↗</span>
+                    </a>
 
                     <a
                         href="https://www.instagram.com/carnathn/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        class="contact-link"
                     >
-                        INSTAGRAM ↗
+                        <span>INSTAGRAM</span>
+                        <strong>@carnathn</strong>
+                        <span class="contact-arrow">↗</span>
                     </a>
 
                     <a
-                        href="https://share.google/fYWBJCmfk88IJ9iUX"
+                        href="https://github.com/khaierl"
                         target="_blank"
                         rel="noopener noreferrer"
+                        class="contact-link"
                     >
-                        GITHUB ↗
+                        <span>GITHUB</span>
+                        <strong>@khaierl</strong>
+                        <span class="contact-arrow">↗</span>
                     </a>
 
                     <a
-                        href="https://www.tiktok.com/@kha.ierl"
+                        href="https://www.tiktok.com/@kha.ierl/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        class="contact-link"
                     >
-                        TIKTOK ↗
+                        <span>TIKTOK</span>
+                        <strong>@kha.ierl</strong>
+                        <span class="contact-arrow">↗</span>
                     </a>
 
                     <a
-                        href="https://wa.me/6281234567890"
+                        href="https://wa.me/6285691233389"
                         target="_blank"
                         rel="noopener noreferrer"
+                        class="contact-link"
                     >
-                        WHATSAPP ↗
+                        <span>WHATSAPP</span>
+                        <strong>Let's chat on WhatsApp</strong>
+                        <span class="contact-arrow">↗</span>
                     </a>
 
                 </div>
-
-
-
-                <div class="contact-email">
-
-                    <span>
-                        EMAIL ME
-                    </span>
-
-                    <a href="mailto:carissacitra8@email.com">
-                        carissacitra8@email.com
-                    </a>
-
-                </div>
-
             </div>
-
         </section>
 
     </main>
 
+    <!-- FOOTER -->
+    <footer class="footer">
 
+        <a href="#home" class="footer-logo">
+            CARS<span>®</span>
+        </a>
 
-    <!-- ================= FOOTER ================= -->
+        <p>MADE WITH CURIOSITY & A LITTLE BIT OF COFFEE.</p>
 
-    <footer>
+        <a href="#home" class="back-to-top">
+            BACK TO TOP ↑
+        </a>
 
-        <div class="footer-big">
-
-            COLOR
-            <span>OUTSIDE</span>
-            THE LINES.
-
-        </div>
-
-
-
-        <div class="footer-bottom">
-
-            <span>
-                Khael / PORTFOLIO / 2026
-            </span>
-
-            <a href="#home">
-                ↑ BACK TO TOP
-            </a>
-
-        </div>
+        <span class="footer-year">© 2026</span>
 
     </footer>
-
-
 
     <script src="script.js"></script>
 
